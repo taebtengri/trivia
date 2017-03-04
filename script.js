@@ -10,7 +10,7 @@ var questions = [{question: "Which of these particles has negative charge?", ans
 				{question: "Which branch of physics is devoted to the study of heat and related phenomen?" , answer1: "Cinematics" , answer2: "Electrodynamics" , 
 				answer3: "Quantum Physics" , 
 				answerc: "Thermodynamics" },
-				{question: "Schrödinger's cat is a thought experiment dealing with which type of mechanics?" , answer1: "Newton" , answer2: "Relativistic" , 
+				{question: "Schroedinger's cat is a thought experiment dealing with which type of mechanics?" , answer1: "Newton" , answer2: "Relativistic" , 
 				answer3: "Statistical" , answerc: "Quantum" },
 				{question: "Who is the author of the book A Brief History of Time?" , answer1: "Paul Dirac" , answer2: "Kip Thorn" , answer3: "Lev Landau" , 
 				answerc: "Stephen Hawking" },
@@ -76,7 +76,7 @@ function launch() {
     
 
 	var i = Math.floor(Math.random()*questions.length);
-	
+	$("#left").html('<h2>Questions left: ' + questions.length + '</h2>');
 	if (questions.length == 0) {
 		$("#content").html('<h1>VICTORY!</h2>');
 		stop();
